@@ -5,7 +5,6 @@ import "swiper/css";
 import Youtube from "../../img/yt.png";
 import Porfolio from "../../img/portfolio.jpg";
 import Wikipedia from "../../img/wiki.jpg";
-import MusicApp from "../../img/musicapp.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
