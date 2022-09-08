@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
+import Youtube from "../../img/yt.png";
+import Porfolio from "../../img/portfolio.jpg";
+import Wikipedia from "../../img/wiki.jpg";
 import MusicApp from "../../img/musicapp.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
@@ -24,16 +24,17 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <a href= "https://effulgent-sprite-abaec8.netlify.app/">
+          <img src={Youtube} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <img src={Porfolio} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={HOC} alt="" />
+          <a href= "https://lambent-clafoutis-0cd039.netlify.app/">
+          <img src={Wikipedia} alt="" />
+          </a>
         </SwiperSlide>
       </Swiper>
     </div>

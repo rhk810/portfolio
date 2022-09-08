@@ -2,6 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
+import down from "../../img/down1.png";
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -12,7 +13,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
+        "service_vcw7pym",
         "template_m5udu2c",
         form.current,
         "VLwg1ltOWvnCYAiK_"
@@ -36,7 +37,8 @@ const Contact = () => {
         <div className="awesome">
           {/* darkMode */}
           <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
-          <span>Contact me</span>
+          <span>Contact me @</span>
+          
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
@@ -46,17 +48,17 @@ const Contact = () => {
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
-          <span>{done && "Thanks for Contacting me"}</span>
+          <input type="text" name="user_name" className="user"  placeholder="Ravula Harish Kumar" disabled={true}/>
+          <input type="email" name="user_email" className="user" placeholder="harishkumarulht@gmail.com" disabled={true}/>
+          <input name="contact" className="user" placeholder="Contact: +918309814752" disabled={true}/>
+          <img src={down} alt=""/>
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}
           ></div>
         </form>
       </div>
+      
     </div>
   );
 };
