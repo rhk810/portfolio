@@ -28,7 +28,9 @@ const Portfolio = () => {
           </a>
         </SwiperSlide>
         <SwiperSlide>
+            <a href= "https://ravula-harish-kumar.netlify.app/">
           <img src={Porfolio} alt="" />
+            </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href= "https://lambent-clafoutis-0cd039.netlify.app/">
