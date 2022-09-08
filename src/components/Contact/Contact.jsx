@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useRef} from "react";
 import "./Contact.css";
 import { themeContext } from "../../Context";
 import down from "../../img/down1.png";
